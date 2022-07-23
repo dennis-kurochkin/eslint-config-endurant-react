@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config-endurant-react",
+  "version": "1.0.0",
+  "description": "Endurant ESLint React Config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennis-kurochkin/eslint-config-endurant-react.git"
+  },
+  "author": "Dennis Kurochkkin <dennis.kurochkin@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dennis-kurochkin/eslint-config-endurant-react/issues"
+  },
+  "homepage": "https://github.com/dennis-kurochkin/eslint-config-endurant-react#readme",
+  "peerDependencies": {
+    "eslint": ">= 8"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^12.2.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unused-imports": "^2.0.0"
+  }
+}
