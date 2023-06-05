@@ -1,6 +1,15 @@
 module.exports = {
-  extends: ['next/core-web-vitals', 'airbnb', 'airbnb/hooks'],
-  plugins: ['react', '@typescript-eslint', 'unused-imports'],
+  extends: [
+    'airbnb',
+    'airbnb/hooks'
+  ],
+  plugins: [
+    'react',
+    '@typescript-eslint',
+    'unused-imports',
+    "no-relative-import-paths",
+    "import"
+  ],
   env: {
     browser: true,
     es2021: true,
@@ -42,12 +51,8 @@ module.exports = {
         minProperties: 5,
       },
     }],
-    'space-before-blocks': ['error', {
-      functions: 'always', keywords: 'always', classes: 'always',
-    }],
-    'space-before-function-paren': ['error', {
-      anonymous: 'never', named: 'never', asyncArrow: 'always',
-    }],
+    "space-before-blocks": ["error", { "functions": "always", "keywords": "always", "classes": "always" }],
+    "space-before-function-paren": ["error", {"anonymous": "never", "named": "never", "asyncArrow": "always"}],
     'no-multi-spaces': ['error'],
     'no-param-reassign': 'off',
     'no-trailing-spaces': ['error'],
@@ -56,6 +61,10 @@ module.exports = {
      * Imports
      */
     'unused-imports/no-unused-imports': 'warn',
+    "no-relative-import-paths/no-relative-import-paths": [
+      "warn",
+      { "allowSameFolder": false, "rootDir": "src" }
+    ],
     'import/prefer-default-export': 'off',
     'import/extensions': [
       'error',
@@ -65,6 +74,21 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    "import/order": ["error", {
+      "newlines-between": "never",
+      "groups": [
+        "builtin",
+        "external",
+        "internal",
+        "parent",
+        "sibling",
+        "index"
+      ],
+      "alphabetize": {
+        "order": "asc",
+        "caseInsensitive": true
+      },
+    }],
     /**
      * React and JSX
      */
