@@ -63,7 +63,7 @@ module.exports = {
     'unused-imports/no-unused-imports': 'warn',
     "no-relative-import-paths/no-relative-import-paths": [
       "warn",
-      { "allowSameFolder": false, "rootDir": "src" }
+      { "allowSameFolder": true, "rootDir": "src" }
     ],
     'import/prefer-default-export': 'off',
     'import/extensions': [
