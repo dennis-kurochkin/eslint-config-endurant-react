@@ -61,10 +61,7 @@ module.exports = {
      * Imports
      */
     'unused-imports/no-unused-imports': 'warn',
-    "no-relative-import-paths/no-relative-import-paths": [
-      "warn",
-      { "allowSameFolder": true, "rootDir": "src" }
-    ],
+    "no-relative-import-paths/no-relative-import-paths": "off",
     'import/prefer-default-export': 'off',
     'import/extensions': [
       'error',
