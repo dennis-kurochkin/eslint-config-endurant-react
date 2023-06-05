@@ -107,6 +107,8 @@ module.exports = {
     'react/jsx-boolean-value': ['error', 'never'],
     'react/jsx-closing-bracket-location': ['error'],
     'react/jsx-closing-tag-location': ['error'],
+    "class-methods-use-this": 'off',
+    "react/button-has-type": 'off',
     'react/jsx-sort-props': ['warn', {
       callbacksLast: true,
       shorthandLast: true,
